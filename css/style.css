@@ -1,1 +1,90 @@
 /* TODO: Make it awesome */
+
+* {
+    box-sizing: border-box;
+    --rich-black: hsla(182, 83%, 9%, 1);
+    --maximum-blue: hsla(189, 43%, 56%, 1);
+    --light-cyan: hsla(193, 69%, 88%, 1);
+    --mandarin: hsla(19, 84%, 60%, 1);
+    --vermilion: hsla(11, 69%, 50%, 1);
+    /* border: 2px solid black; */
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 99vw;
+    padding: 2% 10%;
+    margin: 1px;
+    display: grid;
+    justify-content: center;
+    background-color: var(--light-cyan);
+    color: var(--rich-black);
+    grid-template-rows: 10% 80% 10%;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    font-size: 1rem;
+}
+
+nav {
+    display: grid;
+    justify-content: right;
+    font-size: 1rem;
+}
+
+li {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--vermilion);
+}
+
+header > nav > ul > li > span {
+    width: 15px;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 25% 75%;
+}
+
+h1 {
+    justify-self: center;
+    color: var(--mandarin);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--vermilion);
+    padding: 5px;
+    /* transition: transform .2s; */
+}
+
+a:hover {
+    background-color: yellow;
+    transform: scale(1.5);
+    transition: all ease 500ms;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+}
