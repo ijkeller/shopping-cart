@@ -79,7 +79,7 @@ a {
 }
 
 a:hover {
-    background-color: yellow;
+    /* background-color: yellow; */
     transform: scale(1.5);
     transition: all ease 500ms;
 }
